@@ -6,13 +6,13 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:11:05 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/16 16:06:12 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/16 21:30:19 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	unsigned char	h;
 	size_t			i;
@@ -32,12 +32,12 @@ char *ft_strchr(const char *s, int c)
 	return (0);
 }
 
-int	main()
-{
-	char s[] = "ferdaous";
-	char *str = ft_strchr(s,'h');
-	if(!str)
-		return 0;
-	printf("%s\n",str);
-	return (0);
-}
+// int	main()
+// {
+// 	char s[] = "ferdaous";
+// 	char *str = ft_strchr(s,'h');
+// 	if(!str)
+// 		return 0;
+// 	printf("%s\n",str);
+// 	return (0);
+// }
