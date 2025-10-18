@@ -1,41 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 10:34:26 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/17 11:44:17 by feel-idr         ###   ########.fr       */
+/*   Created: 2025/10/17 11:44:46 by feel-idr          #+#    #+#             */
+/*   Updated: 2025/10/18 13:11:22 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	unsigned char	*src;
 	unsigned char	*str;
-	unsigned char	h;
 	size_t			i;
 
-	str = (unsigned char *)s;
-	h = (unsigned char)c;
 	i = 0;
-	while (i < n)
-	{
-		if (str[i] == h)
-			return ((void *)&str[i]);
+	if (!s1 || !s2)
+		return (0);
+	if (n == 0)
+		return (0);
+	src = (unsigned char *)s2;
+	str = (unsigned char *)s1;
+	while (i <= n - 1 && str[i] && src[i] && src[i] == str[i])
 		i++;
-	}
-	return (NULL);
+	return (str[i] - src[i]);
 }
-
-// int main()
-// {
-// 	char str[] = "ferdaous";
-// 	char *s = (char *)ft_memchr(str, 'h',8);
-// 	if (!s)
-// 		return (0);
-// 	printf("%s\n", s);
-// 	return (0);
-// }
