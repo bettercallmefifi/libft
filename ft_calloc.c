@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/16 12:08:16 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/18 14:24:56 by feel-idr         ###   ########.fr       */
+/*   Created: 2025/10/18 14:29:50 by feel-idr          #+#    #+#             */
+/*   Updated: 2025/10/18 14:40:00 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned char	*dst;
-	unsigned char	*str;
-	size_t			i;
-
-	if (!src || !dest)
-		return (NULL);
-	dst = (unsigned char *)dest;
-	str = (unsigned char *)src;
-	while (i <= n - 1)
-	{
-		dst[i] = str[i];
-		i++;
-	}
-	return (dest);
+	void *ptr;
+	
 }

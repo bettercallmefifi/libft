@@ -1,31 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/16 12:08:16 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/18 14:24:56 by feel-idr         ###   ########.fr       */
+/*   Created: 2025/10/18 14:05:04 by feel-idr          #+#    #+#             */
+/*   Updated: 2025/10/18 14:36:23 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_memcpy(void *dest, const void *src, size_t n)
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+char	*ft_strdup(const char *s)
 {
-	unsigned char	*dst;
-	unsigned char	*str;
-	size_t			i;
+	char	*str;
+	size_t	i;
 
-	if (!src || !dest)
+	i = 0;
+	if (!s)
 		return (NULL);
-	dst = (unsigned char *)dest;
-	str = (unsigned char *)src;
-	while (i <= n - 1)
+	str = (char *)malloc (ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	while (s[i])
 	{
-		dst[i] = str[i];
+		str[i] = s[i];
 		i++;
 	}
-	return (dest);
+	str[i] = '\0';
+	return (str);
 }
+
+// int main()
+// {
+// 	char str[] = "";
+// 	char *rest = ft_strdup(str);
+// 	if (!rest)
+// 		return (0);
+// 	printf ("%s\n",rest);
+// 	return (0);
+// }
