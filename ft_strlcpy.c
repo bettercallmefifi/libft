@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:30:24 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/16 13:42:11 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/19 22:59:41 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	return (srclen);
 }

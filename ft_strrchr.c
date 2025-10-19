@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:39:11 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/17 10:11:21 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/19 23:06:30 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t			i;
-	unsigned char	h;
-	unsigned char	*str;
+	char	h;
+	char	*str;
 
 	if (!s)
 		return (NULL);
+	str = (char *)s;
 	if (!c)
-		return ((char *)str + ft_strlen(s));
-	h = (unsigned char)c;
-	str = (unsigned char *)s;
+		return (str + ft_strlen(s));
+	h = (char)c;
 	i = ft_strlen(str);
 	while (i >= 0)
 	{

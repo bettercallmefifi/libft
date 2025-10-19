@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:14:27 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/16 12:29:17 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/19 22:58:56 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*s;
 	size_t			i;
 
+	i = 0;
 	if (!dest || !src)
 		return (NULL);
 	d = (unsigned char *)dest;
