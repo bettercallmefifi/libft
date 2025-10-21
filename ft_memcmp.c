@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 11:44:46 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/19 23:17:52 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/20 11:35:50 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t			i;
 
 	i = 0;
-	// if (!s1 || !s2)
-	// 	return (0);
-	// if (n == 0)
-	// 	return (0);
 	src = (unsigned char *)s2;
 	str = (unsigned char *)s1;
 	while (i < n)

@@ -6,11 +6,12 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 13:13:18 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/19 00:16:36 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/20 11:33:11 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -20,14 +21,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (*little == '\0')
 		return ((char *)&big[i]);
-	while (big[i] && i <= len - 1)
+	while (big[i] && i < len)
 	{
 		j = 0;
-		if (big[i] == little[0])
+		while (big[j + i] == little[j] && (i + j) < len)
 		{
-			while (little[j] && big[j + i] == little[j] && (i + j) <= len)
-				j++;
-			if (j == ft_strlen(little))
+			j++;
+			if (little[j] == '\0')
 				return ((char *)&big[i]);
 		}
 		i++;
@@ -40,7 +40,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 //     const char *large = "Foo Bar Baz";
 //     const char *small = "Bar";
 //     char *ptr;
-//     ptr = ft_strnstr(large, small, 5);
+//     ptr = ft_strnstr(0, small, 5);
 //     if (ptr != NULL) {
 //         printf("%s\n", ptr);
 //     } else {

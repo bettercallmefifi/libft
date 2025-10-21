@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 14:05:04 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/18 14:36:23 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/19 17:57:15 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 
 	i = 0;
-	if (!s)
-		return (NULL);
 	str = (char *)malloc (ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
