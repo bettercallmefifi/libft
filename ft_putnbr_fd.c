@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 09:51:23 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/24 10:03:58 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:12:38 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,5 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nbr <= 9)
 		rest[i] = nbr + '0';
 	while (i >= 0)
-		write(fd , &rest[i--], 1);
+		write(fd, &rest[i--], 1);
 }
-// int main()
-// {
-// 	ft_putnbr_fd(-42,1);
-// 	return (0);
-// }

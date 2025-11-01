@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:04:14 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/20 12:13:37 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:11:18 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 
 	i = 0;
 	if (!s || fd < 0)
-		return;
+		return ;
 	while (s[i] != '\0')
 	{
 		write(fd, &s[i], 1);

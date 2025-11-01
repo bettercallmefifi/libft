@@ -6,38 +6,38 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 23:22:06 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/19 00:34:46 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:31:04 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
+// #include <string.h>
+// #include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*ptr;
-	size_t			i;
-	size_t			slen;
+	char	*s1;
+	size_t	i;
+	size_t	s_len;
 
 	i = 0;
-	if (!s)
+	if (s == NULL)
 		return (NULL);
-	if (start >= strlen(s))
-		return (strdup(""));
-	slen = strlen (s);
-	if (len > slen - start)
-		len = slen - start;
-	ptr = malloc((len + 1) * sizeof(char));
-	if (!ptr)
+	s_len = ft_strlen(s);
+	if (start > s_len)
+		return (ft_strdup(""));
+	if (start + len > s_len)
+		len = s_len - start;
+	s1 = (char *)malloc(len + 1);
+	if (s1 == NULL)
 		return (NULL);
-	while (s[start + 1] && i < len)
+	while (i < len && s[start + i])
 	{
-		ptr[i] = s[start + i];
+		s1[i] = s[start + i];
 		i++;
 	}
-	ptr[i] = '\0';
-	return (ptr);
+	s1[i] = '\0';
+	return (s1);
 }
 // #include <stdio.h>
 

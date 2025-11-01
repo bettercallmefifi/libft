@@ -23,8 +23,6 @@ char	*ft_strtrim(char const *s, char const *set)
 	end = ft_strlen(s);
 	while (s[start] != '\0' && ft_strchr(set, s[start]))
 		start++;
-	if (start == end + 1)
-		return (ft_strdup(""));
 	while (end > start && ft_strchr(set, s[end - 1]))
 		end--;
 	return (ft_substr(s, start, end - start));

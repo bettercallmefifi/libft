@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 21:52:32 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/14 22:43:37 by feel-idr         ###   ########.fr       */
+/*   Created: 2025/10/16 11:52:50 by feel-idr          #+#    #+#             */
+/*   Updated: 2025/11/01 17:36:08 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	return (ft_isdigit(c) || ft_isalpha(c));
 }

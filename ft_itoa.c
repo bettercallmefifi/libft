@@ -6,15 +6,16 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 10:05:45 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/10/24 10:29:32 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/10/24 11:14:45 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static char	*fifi_print(unsigned int nb, int i, int flag)
 {
 	char	*rst;
-	
+
 	if (nb == 0)
 	{
 		rst = malloc (sizeof(char) * 2);
@@ -29,7 +30,7 @@ static char	*fifi_print(unsigned int nb, int i, int flag)
 		return (NULL);
 	rst[i] = '\0';
 	i--;
-	if(flag == -1)
+	if (flag == -1)
 		rst[0] = '-';
 	while (nb)
 	{
@@ -39,6 +40,7 @@ static char	*fifi_print(unsigned int nb, int i, int flag)
 	}
 	return (rst);
 }
+
 char	*ft_itoa(int n)
 {
 	unsigned int	nbr;
