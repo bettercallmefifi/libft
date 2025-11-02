@@ -16,9 +16,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-
-bonus: $(BONUS_OBJ)
-	ar rcs $(NAME) 
   
 clean:
 	rm -f $(OBJS)
