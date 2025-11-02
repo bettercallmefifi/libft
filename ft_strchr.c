@@ -30,12 +30,12 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	char s[] = "ferdaous";
 // 	char *str = ft_strchr(s,'h');
 // 	if(!str)
-// 		return 0;
+// 		return (0);
 // 	printf("%s\n",str);
 // 	return (0);
 // }

@@ -21,7 +21,7 @@ int	ft_isdigit(int c)
 // {
 // 	int i;
 
-// 	    i = '0';
+// 		 i = '0';
 //     while (i <= '9')
 //     {
 //         printf("%d",ft_isdigit(i));
