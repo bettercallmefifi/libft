@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:53:27 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/11/02 19:21:36 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/11/02 23:00:35 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,14 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+
+
+typedef struct s_list
+{
+	void *content;
+	struct s_list *next;
+} t_list;
+
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

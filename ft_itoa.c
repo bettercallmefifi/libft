@@ -18,14 +18,14 @@ static char	*fifi_print(unsigned int nb, int i, int flag)
 
 	if (nb == 0)
 	{
-		rst = malloc(sizeof(char) * 2);
+		rst = malloc (sizeof(char) * 2);
 		if (!rst)
 			return (NULL);
 		rst[0] = '0';
 		rst[1] = '\0';
 		return (rst);
 	}
-	rst = malloc(sizeof(char) * (i + 1));
+	rst = malloc (sizeof(char) * (i + 1));
 	if (!rst)
 		return (NULL);
 	rst[i] = '\0';

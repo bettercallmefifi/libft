@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
 // #include <string.h>
 // #include <stdlib.h>
 
@@ -46,9 +45,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {
 //     char *str = "Hello World";
 
-//     printf("1: %s\n", ft_substr(str, 6, 5));
-//     printf("2: %s\n", ft_substr(str, 0, 5));
-//     printf("3: %s\n", ft_substr(str, 11, 3));
-//     printf("4: %s\n", ft_substr(str, 3, 20));
-//     return (0);
+//     printf("1: %s\n", ft_substr(str, 6, 5));   
+//     printf("2: %s\n", ft_substr(str, 0, 5));   
+//     printf("3: %s\n", ft_substr(str, 11, 3)); 
+//     printf("4: %s\n", ft_substr(str, 3, 20)); 
+//     return 0;
 // }
