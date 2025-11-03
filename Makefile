@@ -17,7 +17,6 @@ BSRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c \
 	   ft_lstmap_bonus.c
 OBJS = $(SRCS:.c=.o)
 BONUS = $(BSRC:.c=.o)
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -28,10 +27,8 @@ bonus: $(BONUS)
   
 clean:
 	rm -f $(OBJS) $(BONUS)
-
+git
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: all clean fclean re bonus
