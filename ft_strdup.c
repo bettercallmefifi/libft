@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 // #include <stdio.h>
 // #include <stdlib.h>
 // #include <string.h>
@@ -20,7 +21,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 
 	i = 0;
-	str = (char *)malloc (ft_strlen(s) + 1);
+	str = (char *)malloc(ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
 	while (s[i])
