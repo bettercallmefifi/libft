@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:45:50 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/11/03 15:12:22 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/11/03 14:57:15 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	(*lst) = NULL;
 }
-/*static void	del(void *p)
-{
-	free(p);
-}
-int	main(void)
-{
-	t_list *a = ft_lstnew(strdup("one"));
-	t_list *b = ft_lstnew(strdup("two"));
-	ft_lstadd_back(&a, b);
-	ft_lstclear(&a, del);
-}*/

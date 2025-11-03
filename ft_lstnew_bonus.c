@@ -6,7 +6,7 @@
 /*   By: feel-idr <feel-idr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:47:25 by feel-idr          #+#    #+#             */
-/*   Updated: 2025/11/03 15:14:15 by feel-idr         ###   ########.fr       */
+/*   Updated: 2025/11/03 14:47:26 by feel-idr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,12 @@ t_list	*ft_lstnew(void *content)
 	return (new);
 }
 
-/*#include <stdio.h>
+// int mainI()
+// {
+// 	t_list *node1 = ft_lstnew(1);
+// 	t_list *node2 = ft_lstnew(1);
+// 	t_list *node3 = ft_lstnew(1);
 
-int	main(void)
-{
-	t_list *n = ft_lstnew("hello");
-	printf("%s\n", (char *)n->content);
-	free(n);
-}*/
+// 	node1->next = node2;
+// 	node2->next = node3;
+// }
